@@ -44,7 +44,7 @@
 
     header h1 {
       font-size: 2.5em;
-      margin: 0;
+      margin: 2em;
       color: #2c3e50;
     }
 
@@ -112,6 +112,23 @@
       margin-bottom: 0.5em;
     }
 
+    .header-img {
+      float: left;
+      width: 400px;
+      height: auto;
+      margin: 0 1em 1em 0;
+    }
+
+    .summary {
+      padding: 2em;
+    }
+
+    .summary::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
     @media (max-width: 600px) {
       .container {
         padding: 1em;
@@ -142,12 +159,13 @@
 
       <header>
         <h1>Черепанов Леонид Никифорович</h1>
+        <img class="header-img" src="nikiforovich.png" alt="nikiforovich">
         <dl>
-          <dt>Дата рождения:</dt>
+          <dt><strong>Дата рождения:</strong></dt>
           <dd>22 ноября 1943, Сопинина, Шатровский р-н, Курганская обл.</dd>
-          <dt>Дата смерти:</dt>
+          <dt><strong>Дата смерти:</strong></dt>
           <dd>6 июня 2015 (71 год), Лесной, Свердловская обл.</dd>
-          <dt>Звания и награды:</dt>
+          <dt><strong>Звания и награды:</strong></dt>
           <dd>Изобретатель СССР (1987), ветеран атомной энергетики и промышленности (1999), награждён медалями.</dd>
         </dl>
       </header>
